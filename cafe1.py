@@ -19,6 +19,9 @@ for i in range(4):
         print(f"Your item {item} has been added to your order.")
     else:
         print(f"Sorry, {item} is not available on the menu.")
-
+if order_total > 120:
+    discount = 0.15 * order_total
+    order_total -= discount
+    print("Congratulations! You qualify for a 15% discount.")
 print(f"The total amount of the items is Rs {order_total}")
 
